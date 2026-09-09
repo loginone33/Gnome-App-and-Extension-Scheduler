@@ -21,7 +21,7 @@
 
 ## Compatibility
 
-- **GNOME Shell**: 45, 46, 47, 48, 49, 50
+- **GNOME Shell**: 45, 46, 47, 48, 49, 50, 51
 - **Session**: Wayland & X11
 
 ---

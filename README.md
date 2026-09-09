@@ -35,7 +35,7 @@
    git clone https://github.com/loginone33/Gnome-App-and-Extension-Scheduler.git
    cd Gnome-App-and-Extension-Scheduler
    ```
-2. Run the installation script:
+2. Run the included installation script:
    ```bash
    chmod +x install.sh
    ./install.sh
@@ -50,24 +50,28 @@
    gnome-extensions prefs app-and-extension-scheduler@loginone
    ```
 
-### Packaging for extensions.gnome.org (EGO)
-
-To create a clean zip package for upload to extensions.gnome.org:
-```bash
-gnome-extensions pack --force --extra-source=lib
-```
-
 ---
 
-## License
+## How It Works
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+1. **Applications**: Select applications from GNOME autostart or installed system software. Configure active days and the start/end time window. The extension configures `systemd --user` timers and login checks accordingly.
+2. **Extensions**: Choose which extensions should follow a schedule. Selected extensions will be enabled during active hours and disabled outside.
+3. **Explicit Policy**: Unscheduled items are never altered. Pausing a schedule item returns it to standard manual control.
 
 ---
 
 ## Support & Donations
 
-If you find this extension helpful, consider supporting its development:
+If you like this extension and want to support its ongoing development, your support is greatly appreciated!
 
-- **Ko-fi**: [loginone](https://ko-fi.com/loginone)
-- **Buy Me a Coffee**: [loginone](https://buymeacoffee.com/loginone)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate%20(PayPal)-ff5e5b.svg)](https://ko-fi.com/loginone)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg)](https://buymeacoffee.com/loginone)
+
+- **Ko-fi** *(PayPal available)*: [ko-fi.com/loginone](https://ko-fi.com/loginone)
+- **Buy Me A Coffee**: [buymeacoffee.com/loginone](https://buymeacoffee.com/loginone)
+
+---
+
+## License
+
+This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) file for details.

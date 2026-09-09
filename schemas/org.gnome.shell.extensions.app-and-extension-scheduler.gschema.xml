@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.app-and-extension-scheduler" path="/org/gnome/shell/extensions/app-and-extension-scheduler/">
+    <key name="scheduled-apps" type="s">
+      <default>'{}'</default>
+      <summary>Scheduled applications configuration</summary>
+      <description>JSON dictionary containing scheduled applications, active days, and time ranges.</description>
+    </key>
+    <key name="scheduled-extensions" type="s">
+      <default>'{}'</default>
+      <summary>Scheduled GNOME extensions configuration</summary>
+      <description>JSON dictionary containing scheduled extensions, active days, and time ranges.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -134,7 +134,7 @@ function createDaysBox(initialDays, onChange) {
     return box;
 }
 
-export default class AppStartTimePreferences extends ExtensionPreferences {
+export default class AppAndExtensionSchedulerPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         const settings = this.getSettings();
 
